@@ -45,5 +45,17 @@ public:
 		return _Size == 0;
 	}
 
+	void Resize(short NewSize) {
+		T* TempArray = new T[NewSize];
+
+		_Size = NewSize;
+		for (short i = 0; i < _Size; i++) TempArray[i] = OriginalArray[i];
+		delete[] OriginalArray;
+		
+		OriginalArray = TempArray;
+
+
+	}
+
 };
 

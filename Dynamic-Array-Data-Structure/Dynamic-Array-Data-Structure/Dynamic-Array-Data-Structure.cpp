@@ -20,6 +20,18 @@ int main()
 
     MyDynamicArray.PrintList();
 
+    cout << "\nResizing array to 2" << endl;
+    MyDynamicArray.Resize(2);
+    cout << "\nArray Size: " << MyDynamicArray.Size() << "\n";
+    cout << "\nArray Items: \n";
+    MyDynamicArray.PrintList();
+
+    cout << "\nResizing array to 10" << endl;
+    MyDynamicArray.Resize(10);
+    cout << "\nArray Size: " << MyDynamicArray.Size() << "\n";
+    cout << "\nArray Items: \n";
+    MyDynamicArray.PrintList();
+
 
 
 
