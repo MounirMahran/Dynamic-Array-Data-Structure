@@ -76,5 +76,15 @@ public:
 		delete[] OriginalArray;
 	}
 
+	bool Delete(short Index) {
+		if (Index < 0 || Index >= _Size) return false;
+
+		for (short i = Index; i < _Size; i++) OriginalArray[i] = OriginalArray[i + 1];
+
+		Resize(_Size - 1);
+
+		return true;
+	}
+
 };
 

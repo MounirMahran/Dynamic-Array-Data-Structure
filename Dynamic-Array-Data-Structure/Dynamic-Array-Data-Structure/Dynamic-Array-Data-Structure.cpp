@@ -36,8 +36,7 @@ int main()
 
 
     //Get Item by index , Reverse and Clear Array Features
-
-    cout << "\nItem at index 1:"<<MyDynamicArray.GetItem(1) << endl;
+   /* cout << "\nItem at index 1:"<<MyDynamicArray.GetItem(1) << endl;
 
     cout << "\nReverse Array" << endl;
     MyDynamicArray.Reverse();
@@ -45,6 +44,11 @@ int main()
 
     cout << "\Clear Array" << endl;
     MyDynamicArray.Clear();
+    MyDynamicArray.PrintList();*/
+
+    //Delete Item by index
+    cout << "\nDelete item at index 3" << endl;
+    MyDynamicArray.Delete(3);
     MyDynamicArray.PrintList();
 
 
