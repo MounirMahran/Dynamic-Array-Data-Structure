@@ -86,5 +86,13 @@ public:
 		return true;
 	}
 
+	bool DeleteFirstItem() {
+		return Delete(0);
+	}
+
+	bool DeleteLastItem() {
+		return Delete(_Size - 1);
+	}
+
 };
 

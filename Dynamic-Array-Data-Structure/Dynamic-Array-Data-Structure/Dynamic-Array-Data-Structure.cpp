@@ -47,8 +47,17 @@ int main()
     MyDynamicArray.PrintList();*/
 
     //Delete Item by index
-    cout << "\nDelete item at index 3" << endl;
+   /* cout << "\nDelete item at index 3" << endl;
     MyDynamicArray.Delete(3);
+    MyDynamicArray.PrintList();*/
+
+    //Delete First and Last Item
+    cout << "\nDelete First Item" << endl;
+    MyDynamicArray.DeleteFirstItem();
+    MyDynamicArray.PrintList();
+
+    cout << "\nDelete Last Item" << endl;
+    MyDynamicArray.DeleteLastItem();
     MyDynamicArray.PrintList();
 
 
