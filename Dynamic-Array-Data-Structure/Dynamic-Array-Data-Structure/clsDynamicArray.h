@@ -103,6 +103,16 @@ public:
 		return Delete(Find(Value));
 	}
 
+	void InsertAt(short Index, T Value) {
+		_Size++;
+		Resize(_Size);
+
+		for (short i = _Size - 1; i >= Index; i--) {
+			OriginalArray[i] = OriginalArray[i - 1];
+		}
+
+		OriginalArray[Index] = Value;
+	}
 
 };
 

@@ -61,12 +61,17 @@ int main()
     MyDynamicArray.PrintList();*/
 
     //Find, Delete Item By Value
-    cout << "\nFind Index Of Item 30: " << endl;
+    /*cout << "\nFind Index Of Item 30: " << endl;
     cout << MyDynamicArray.Find(30) << endl;
 
 
     cout << "\nDelete Item 40:" << endl;
     MyDynamicArray.DeleteItem(40);
+    MyDynamicArray.PrintList();*/
+
+    //Insert At Feature
+    cout << "Inserting 10 at index 2" << endl;
+    MyDynamicArray.InsertAt(2, 10);
     MyDynamicArray.PrintList();
 
 
