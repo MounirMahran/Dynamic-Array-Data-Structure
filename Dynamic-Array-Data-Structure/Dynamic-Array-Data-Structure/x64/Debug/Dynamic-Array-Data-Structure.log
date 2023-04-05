@@ -1,14 +1,2 @@
 ﻿  Dynamic-Array-Data-Structure.cpp
-C:\Users\DELL\Desktop\My-GitHub\Dynamic-Array-Data-Structure\Dynamic-Array-Data-Structure\Dynamic-Array-Data-Structure\clsDynamicArray.h(109,5): warning C4101: 'Temp': unreferenced local variable
-C:\Users\DELL\Desktop\My-GitHub\Dynamic-Array-Data-Structure\Dynamic-Array-Data-Structure\Dynamic-Array-Data-Structure\clsDynamicArray.h(106,1): message : while compiling class template member function 'void clsDynamicArray<int>::InsertAt(short,T)'
-          with
-          [
-              T=int
-          ]
-C:\Users\DELL\Desktop\My-GitHub\Dynamic-Array-Data-Structure\Dynamic-Array-Data-Structure\Dynamic-Array-Data-Structure\Dynamic-Array-Data-Structure.cpp(74,28): message : see reference to function template instantiation 'void clsDynamicArray<int>::InsertAt(short,T)' being compiled
-          with
-          [
-              T=int
-          ]
-C:\Users\DELL\Desktop\My-GitHub\Dynamic-Array-Data-Structure\Dynamic-Array-Data-Structure\Dynamic-Array-Data-Structure\Dynamic-Array-Data-Structure.cpp(9,42): message : see reference to class template instantiation 'clsDynamicArray<int>' being compiled
   Dynamic-Array-Data-Structure.vcxproj -> C:\Users\DELL\Desktop\My-GitHub\Dynamic-Array-Data-Structure\Dynamic-Array-Data-Structure\x64\Debug\Dynamic-Array-Data-Structure.exe

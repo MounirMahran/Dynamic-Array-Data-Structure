@@ -103,7 +103,9 @@ public:
 		return Delete(Find(Value));
 	}
 
-	void InsertAt(short Index, T Value) {
+	bool InsertAt(short Index, T Value) {
+		if (Index < 0 || Index > _Size) return false;
+
 		_Size++;
 		Resize(_Size);
 
@@ -112,6 +114,24 @@ public:
 		}
 
 		OriginalArray[Index] = Value;
+
+		return true;
+	}
+
+	bool InsertAtBeginning(T Value) {
+		return InsertAt(0, Value);
+	}
+
+	bool InsertAtEnd(T Value) {
+		return InsertAt(_Size, Value);
+	}
+
+	bool InsertBefore(short Index, T Value) {
+		return InsertAt(Index - 1, Value);
+	}
+
+	bool InsertAfter(short Index, T Value) {
+		return InsertAt(Index + 1, Value);
 	}
 
 };
