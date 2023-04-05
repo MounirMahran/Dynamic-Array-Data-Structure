@@ -7,6 +7,7 @@ template <class T>
 class clsDynamicArray
 {
 	short _Size = 0;
+	T* TempArray;
 
 public:
 	T* OriginalArray;
@@ -46,15 +47,33 @@ public:
 	}
 
 	void Resize(short NewSize) {
-		T* TempArray = new T[NewSize];
+		TempArray = new T[NewSize];
 
 		_Size = NewSize;
 		for (short i = 0; i < _Size; i++) TempArray[i] = OriginalArray[i];
 		delete[] OriginalArray;
-		
+
 		OriginalArray = TempArray;
 
 
+	}
+
+	T GetItem(short Index) {
+		if (Index < 0 || Index >= _Size) return 0;
+		return OriginalArray[Index];
+	}
+
+	void Reverse() {
+		TempArray = new T[_Size];
+		for (short i = 0; i < _Size; i++) TempArray[i] = OriginalArray[_Size - i - 1];
+		
+		delete[] OriginalArray;
+		OriginalArray = TempArray;
+	}
+
+	void Clear() {
+		_Size = 0;
+		delete[] OriginalArray;
 	}
 
 };
