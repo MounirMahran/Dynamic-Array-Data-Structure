@@ -52,13 +52,23 @@ int main()
     MyDynamicArray.PrintList();*/
 
     //Delete First and Last Item
-    cout << "\nDelete First Item" << endl;
+    /*cout << "\nDelete First Item" << endl;
     MyDynamicArray.DeleteFirstItem();
     MyDynamicArray.PrintList();
 
     cout << "\nDelete Last Item" << endl;
     MyDynamicArray.DeleteLastItem();
+    MyDynamicArray.PrintList();*/
+
+    //Find, Delete Item By Value
+    cout << "\nFind Index Of Item 30: " << endl;
+    cout << MyDynamicArray.Find(30) << endl;
+
+
+    cout << "\nDelete Item 40:" << endl;
+    MyDynamicArray.DeleteItem(40);
     MyDynamicArray.PrintList();
+
 
 
 

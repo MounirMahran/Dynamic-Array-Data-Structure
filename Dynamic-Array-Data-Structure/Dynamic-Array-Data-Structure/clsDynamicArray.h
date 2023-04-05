@@ -94,5 +94,15 @@ public:
 		return Delete(_Size - 1);
 	}
 
+	short Find(T Value) {
+		for (short i = 0; i < _Size; i++) if (OriginalArray[i] == Value) return i;
+		return -1;
+	}
+
+	bool DeleteItem(T Value) {
+		return Delete(Find(Value));
+	}
+
+
 };
 
